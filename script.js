@@ -37,11 +37,15 @@ function login() {
         });
 }
 
-// LOGOUT
 function logout() {
     signOut(auth)
         .then(() => {
+            // Clear status
             document.getElementById("user-status").innerText = "Logged out!";
+
+            // 🔥 CLEAR INPUT FIELDS
+            document.getElementById("email").value = "";
+            document.getElementById("password").value = "";
         });
 }
 
@@ -58,3 +62,4 @@ onAuthStateChanged(auth, (user) => {
 window.signup = signup;
 window.login = login;
 window.logout = logout;
+
