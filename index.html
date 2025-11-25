@@ -22,39 +22,25 @@
             <li>👵 Elder Care</li>
         </ul>
     </section>
-<section id="auth">
-    <h2>User Login / Signup</h2>
 
-    <div id="user-form">
-        <input type="email" id="email" placeholder="Enter Email" />
-        <input type="password" id="password" placeholder="Enter Password" />
-        
-        <button onclick="signup()">Sign Up</button>
-        <button onclick="login()">Login</button>
-        <button onclick="logout()">Logout</button>
-    </div>
+    <section id="auth">
+        <h2>User Login / Signup</h2>
 
-    <p id="user-status"></p>
-</section>
+        <div id="user-form">
+            <input type="email" id="email" placeholder="Enter Email" />
+            <input type="password" id="password" placeholder="Enter Password" />
+            
+            <button onclick="signup()">Sign Up</button>
+            <button onclick="login()">Login</button>
+            <button onclick="logout()">Logout</button>
+        </div>
 
-    <script src="script.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+        <p id="user-status"></p>
+    </section>
 
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyCbPvByCy4wMu2BAoKYlQqpgSeaIBTYJSo",
-    authDomain: "house-help-d4a29.firebaseapp.com",
-    projectId: "house-help-d4a29",
-    storageBucket: "house-help-d4a29.appspot.com",
-    messagingSenderId: "541067969082",
-    appId: "1:541067969082:web:eec4d9e43dc4e2395d6b03"
-  };
+    <!-- Load Firebase config + your logic as ES modules -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="script.js"></script>
 
-  firebase.initializeApp(firebaseConfig);
-  const auth = firebase.auth();
-  const db = firebase.firestore();
-</script>
 </body>
 </html>
