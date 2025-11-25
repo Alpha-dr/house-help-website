@@ -1,4 +1,5 @@
-import { auth } from "./firebase.js";
+import { auth } from "./firebase-config.js
+";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 document.getElementById("loginBtn").addEventListener("click", () => {
@@ -13,3 +14,4 @@ document.getElementById("loginBtn").addEventListener("click", () => {
       alert(error.message);
     });
 });
+
