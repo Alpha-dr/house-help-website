@@ -15,7 +15,7 @@ function signup() {
     createUserWithEmailAndPassword(auth, email, password)
         .then(() => {
             document.getElementById("user-status").innerText = "Signup Successful!";
-            // window.location.href = "dashboard.html";
+            window.location.href = "dashboard.html";   // ENABLED REDIRECT
         })
         .catch(error => {
             document.getElementById("user-status").innerText = error.message;
@@ -30,7 +30,7 @@ function login() {
     signInWithEmailAndPassword(auth, email, password)
         .then(() => {
             document.getElementById("user-status").innerText = "Login Successful!";
-            // window.location.href = "dashboard.html";
+            window.location.href = "dashboard.html";  // ENABLED REDIRECT
         })
         .catch(error => {
             document.getElementById("user-status").innerText = error.message;
@@ -54,7 +54,7 @@ onAuthStateChanged(auth, (user) => {
     }
 });
 
-// ⭐ MOST IMPORTANT PART → Attach functions to window
+// ⭐ Attach functions to window
 window.signup = signup;
 window.login = login;
 window.logout = logout;
