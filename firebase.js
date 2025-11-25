@@ -1,14 +1,17 @@
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+// Import Firebase SDK
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
 
+// Your Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCbPvByCy4wMu2BAoKYlQqpgSeaIBTYJSo",
-  authDomain: "house-help-d4a29.firebaseapp.com",
-  projectId: "house-help-d4a29",
-  storageBucket: "house-help-d4a29.firebasestorage.app",
-  messagingSenderId: "541067969082",
-  appId: "1:541067969082:web:eec4d9e43dc4e2395d6b03"
+    apiKey: "YOUR-KEY",
+    authDomain: "YOUR",
+    projectId: "YOUR",
+    storageBucket: "YOUR",
+    messagingSenderId: "YOUR",
+    appId: "YOUR"
 };
 
+// Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
