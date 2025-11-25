@@ -22,6 +22,21 @@
             <li>👵 Elder Care</li>
         </ul>
     </section>
+<section id="auth">
+    <h2>User Login / Signup</h2>
+
+    <div id="user-form">
+        <input type="email" id="email" placeholder="Enter Email" />
+        <input type="password" id="password" placeholder="Enter Password" />
+        
+        <button onclick="signup()">Sign Up</button>
+        <button onclick="login()">Login</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <p id="user-status"></p>
+</section>
+
 
     <script src="script.js"></script>
 <!-- Firebase SDK -->
@@ -49,6 +64,5 @@
   // Initialize Authentication
   const auth = firebase.auth();
 </script>
-
 </body>
 </html>
