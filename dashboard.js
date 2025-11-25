@@ -1,4 +1,5 @@
-import { auth } from "./firebase.js";
+import { auth } from "./firebase-config.js
+";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 
 onAuthStateChanged(auth, (user) => {
@@ -12,3 +13,4 @@ document.getElementById("logoutBtn").addEventListener("click", () => {
     window.location.href = "login.html";
   });
 });
+
