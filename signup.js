@@ -6,7 +6,10 @@ document.getElementById("signupBtn").addEventListener("click", () => {
   const password = document.getElementById("signupPassword").value;
 
   createUserWithEmailAndPassword(auth, email, password)
-    .then(() => {
+    .then((userCredential) => {
+      console.log("Signup successful");
+
+      // 🔥 Redirect to dashboard
       window.location.href = "dashboard.html";
     })
     .catch((error) => {
