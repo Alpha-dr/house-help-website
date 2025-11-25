@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+#services {
+    margin: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 20px;
+}
