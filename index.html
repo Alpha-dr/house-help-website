@@ -24,5 +24,31 @@
     </section>
 
     <script src="script.js"></script>
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js"></script>
+
+<script>
+  // Your Firebase config goes here
+  const firebaseConfig = {
+    apiKey: "YOUR_KEY",
+    authDomain: "YOUR_KEY",
+    projectId: "YOUR_KEY",
+    storageBucket: "YOUR_KEY",
+    messagingSenderId: "YOUR_KEY",
+    appId: "YOUR_KEY"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  // Initialize Firestore
+  const db = firebase.firestore();
+
+  // Initialize Authentication
+  const auth = firebase.auth();
+</script>
+
 </body>
 </html>
