@@ -38,29 +38,23 @@
 </section>
 
     <script src="script.js"></script>
-<!-- Firebase SDK -->
 <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+
 <script>
-  // Your Firebase config goes here
   const firebaseConfig = {
-    apiKey: "YOUR_KEY",
-    authDomain: "YOUR_KEY",
-    projectId: "YOUR_KEY",
-    storageBucket: "YOUR_KEY",
-    messagingSenderId: "YOUR_KEY",
-    appId: "YOUR_KEY"
+    apiKey: "AIzaSyCbPvByCy4wMu2BAoKYlQqpgSeaIBTYJSo",
+    authDomain: "house-help-d4a29.firebaseapp.com",
+    projectId: "house-help-d4a29",
+    storageBucket: "house-help-d4a29.appspot.com",
+    messagingSenderId: "541067969082",
+    appId: "1:541067969082:web:eec4d9e43dc4e2395d6b03"
   };
 
-  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-
-  // Initialize Firestore
-  const db = firebase.firestore();
-
-  // Initialize Authentication
   const auth = firebase.auth();
+  const db = firebase.firestore();
 </script>
 </body>
 </html>
